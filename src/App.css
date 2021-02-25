@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+/* customers container */
+.customersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* <table> */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  /* tr{display: inline-grid;} */
+
+  .searchBox {
+      background-color: #ffc353;
+      color: black;
+      font-size: 1.5em;
+  }
+
+/* </table> */
+
+/*This would be bad practice in a real app because its basically hardcoded to work for this number of th's */
+.customersContainer th:nth-child(1),
+.customersContainer th:nth-child(5){
+  cursor: grab;
+}
